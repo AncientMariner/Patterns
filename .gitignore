@@ -1,13 +1,1 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-.classpath
-.idea
-*.iml
-
-target
-logs
+# here is nothing to add yet
