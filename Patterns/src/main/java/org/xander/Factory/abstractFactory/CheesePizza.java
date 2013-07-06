@@ -18,6 +18,16 @@ public class CheesePizza extends Pizza {
     }
 
     @Override
+    void cut() {
+        System.out.println("Cutting pizza into triangle pieces");
+    }
+
+    @Override
+    void bake() {
+        System.out.println("Bake for 33 minutes at 250");
+    }
+
+    @Override
     public String toString() {
         return "Cheese Pizza";
     }

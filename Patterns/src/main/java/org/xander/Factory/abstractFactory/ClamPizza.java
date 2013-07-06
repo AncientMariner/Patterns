@@ -19,6 +19,11 @@ public class ClamPizza extends Pizza{
     }
 
     @Override
+    void cut() {
+        System.out.println("Cutting pizza into rectangular pieces");
+    }
+
+    @Override
     public String toString() {
         return "Clam Pizza";
     }
