@@ -19,7 +19,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
 
     @Override
     public void update(Observable observable, Object arg) {
-        if(observable instanceof WeatherData) {
+        if (observable instanceof WeatherData) {
             WeatherData weatherData = (WeatherData) observable;
             this.averageTemperature = weatherData.getTemperature();
             this.minimumTemperature = weatherData.getTemperature();

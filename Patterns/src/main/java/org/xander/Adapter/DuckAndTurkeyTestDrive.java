@@ -19,7 +19,6 @@ public class DuckAndTurkeyTestDrive {
         testDuck(turkeyAdapter);
 
 
-
         System.out.println("\n\n\n");
         System.out.println("The Turkey says...");
         testTurkey(wildTurkey);

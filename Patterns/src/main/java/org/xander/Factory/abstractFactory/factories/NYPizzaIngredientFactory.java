@@ -12,7 +12,7 @@ import org.xander.Factory.abstractFactory.ingredients.sauce.ReggianoSauce;
 import org.xander.Factory.abstractFactory.ingredients.sauce.Sauce;
 import org.xander.Factory.abstractFactory.ingredients.vegetables.*;
 
-public class NYPizzaIngredientFactory implements PizzaIngredientFactory{
+public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
     public Dough createDough() {
         return new ThinCrustDough();
     }
@@ -27,10 +27,10 @@ public class NYPizzaIngredientFactory implements PizzaIngredientFactory{
 
     public Veggies[] createVeggies() {
         Veggies veggies[] = {
-            new Garlic(),
-            new Onion(),
-            new Mushroom(),
-            new RedPepper()
+                new Garlic(),
+                new Onion(),
+                new Mushroom(),
+                new RedPepper()
         };
         return veggies;
     }

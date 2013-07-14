@@ -13,7 +13,7 @@ import org.xander.Factory.abstractFactory.ingredients.sauce.PlumTomatoSauce;
 import org.xander.Factory.abstractFactory.ingredients.sauce.Sauce;
 import org.xander.Factory.abstractFactory.ingredients.vegetables.*;
 
-public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory{
+public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
     public Dough createDough() {
         return new ThickCrustDough();
     }

@@ -2,7 +2,7 @@ package org.xander.Factory.abstractFactory;
 
 import org.xander.Factory.abstractFactory.factories.PizzaIngredientFactory;
 
-public class ClamPizza extends Pizza{
+public class ClamPizza extends Pizza {
     PizzaIngredientFactory pizzaIngredientFactory;
 
     public ClamPizza(PizzaIngredientFactory pizzaIngredientFactory) {

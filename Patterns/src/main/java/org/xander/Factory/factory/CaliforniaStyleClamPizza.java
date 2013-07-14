@@ -9,6 +9,7 @@ public class CaliforniaStyleClamPizza extends Pizza {
         toppings.add("Red Chili pepper");
         toppings.add("Green Chili pepper");
     }
+
     @Override
     void cut() {
         System.out.println("Cutting pizza into triangle slices");

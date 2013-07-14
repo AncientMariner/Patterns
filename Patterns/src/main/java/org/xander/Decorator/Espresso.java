@@ -1,6 +1,6 @@
 package org.xander.Decorator;
 
-public class Espresso extends Beverage{
+public class Espresso extends Beverage {
     public Espresso() {
         description = "Espresso";
     }

@@ -35,7 +35,7 @@ public class EnumerationIterator implements Iterator {
         arrayList.add(3);
 
         EnumerationAdapter enumerationAdapter = new EnumerationAdapter(arrayList.iterator());
-        while(enumerationAdapter.hasMoreElements()) {
+        while (enumerationAdapter.hasMoreElements()) {
             System.out.println(enumerationAdapter.nextElement());
         }
 
@@ -46,7 +46,7 @@ public class EnumerationIterator implements Iterator {
         vector.add(3);
 
         EnumerationIterator enumerationIterator = new EnumerationIterator(vector.elements());
-        while(enumerationIterator.hasNext()) {
+        while (enumerationIterator.hasNext()) {
             System.out.println(enumerationIterator.next());
         }
     }
