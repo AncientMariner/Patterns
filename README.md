@@ -1,4 +1,4 @@
-Patterns
-========
+Design Patterns
+===============
 
-Examples with Patterns
+Design Patterns code examples
