@@ -1,8 +1,9 @@
 package org.xander.Iterator;
 
-import java.util.ArrayList;
+import java.util.*;
+import java.util.Iterator;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu{
     ArrayList menuItems;
 
     public PancakeHouseMenu() {
@@ -29,13 +30,13 @@ public class PancakeHouseMenu {
                 3.59);
     }
 
-    private void addItem(String name, String description, boolean vegetarian, double price) {
+    public void addItem(String name, String description, boolean vegetarian, double price) {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         menuItems.add(menuItem);
     }
 
     public Iterator createIterator() {
-        return new PancakeHouseIterator(menuItems);
+        return menuItems.iterator();
     }
 }
 

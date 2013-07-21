@@ -1,6 +1,8 @@
 package org.xander.Iterator;
 
-public class DinnerMenu {
+import java.util.Iterator;
+
+public class DinnerMenu  implements Menu{
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;
@@ -30,7 +32,7 @@ public class DinnerMenu {
 
     }
 
-    private void addItem(String name, String description, boolean vegetarian, double price) {
+    public void addItem(String name, String description, boolean vegetarian, double price) {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         if (numberOfItems >= MAX_ITEMS) {
             System.out.println("Sorry, menu is full! Can't add item to menu");
@@ -43,6 +45,4 @@ public class DinnerMenu {
     public Iterator createIterator() {
         return new DinnerMenuIterator(menuItems);
     }
-
-    ;
 }
