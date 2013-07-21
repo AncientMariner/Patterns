@@ -1,28 +1,22 @@
 package org.xander.Iterator;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Waitress {
-    Menu pancakeHouseMenu;
-    Menu dinnerMenu;
-    Menu cafeMenu;
+    ArrayList menus;
 
-    public Waitress(Menu pancakeHouseMenu, Menu dinnerMenu, Menu cafeMenu) {
-        this.pancakeHouseMenu = pancakeHouseMenu;
-        this.dinnerMenu = dinnerMenu;
-        this.cafeMenu = cafeMenu;
+    public Waitress(ArrayList menus) {
+        this.menus = menus;
     }
 
     public void printMenu() {
-        Iterator pancakeHouseIterator = pancakeHouseMenu.createIterator();
-        Iterator dinnerIterator = dinnerMenu.createIterator();
-        Iterator cafeIterator = cafeMenu.createIterator();
-        System.out.println("Menu\n----\nBreakfast");
-        printMenu(pancakeHouseIterator);
-        System.out.println("\nLunch");
-        printMenu(dinnerIterator);
-        System.out.println("\nDinner");
-        printMenu(cafeIterator);
+        Iterator menuIterator = menus.iterator();
+        while (menuIterator.hasNext()) {
+            Menu menu = (Menu) menuIterator.next();
+            System.out.println();
+            printMenu(menu.createIterator());
+        }
     }
 
     private void printMenu(Iterator iterator) {
