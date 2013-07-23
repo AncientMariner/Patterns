@@ -28,8 +28,6 @@ public class DinnerMenu  implements Menu{
                 "A hot dog, with saurkraut, relish, onions, topped with cheese",
                 false,
                 3.05);
-
-
     }
 
     public void addItem(String name, String description, boolean vegetarian, double price) {

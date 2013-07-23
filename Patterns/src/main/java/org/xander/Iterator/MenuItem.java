@@ -14,7 +14,6 @@ public class MenuItem {
         this.description = description;
         this.vegetarian = vegetarian;
         this.price = price;
-
     }
 
     public String getName() {

@@ -19,8 +19,6 @@ public class CafeMenu implements Menu{
                 "A large burrito, with whole pinto beans, salsa, guacamole",
                 true,
                 4.29);
-
-
     }
 
     public void addItem(String name, String description, boolean vegetarian, double price) {
