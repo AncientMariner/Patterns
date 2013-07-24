@@ -3,7 +3,7 @@ package org.xander.Iterator;
 import java.util.*;
 import java.util.Iterator;
 
-public class PancakeHouseMenu implements Menu{
+public class PancakeHouseMenu implements Menu {
     ArrayList menuItems;
 
     public PancakeHouseMenu() {

@@ -23,6 +23,7 @@ public class MenuTestDrive {
 
         Waitress waitress = new Waitress(allMenus);
         waitress.printMenu();
+        waitress.printVegetarianMenu();
     }
 
     private static void fillInPancakeHouseMenu(MenuComponent pancakeHouseMenu) {
@@ -32,6 +33,11 @@ public class MenuTestDrive {
                 true,
                 3.49
         ));
+
+        pancakeHouseMenu.add(new MenuItem("Waffles",
+                "Waffles, with your choice of blueberries or strawberries",
+                true,
+                3.59));
     }
 
     private static void fillInDinnerMenu(MenuComponent dinnerMenu) {
@@ -41,14 +47,35 @@ public class MenuTestDrive {
                 true,
                 3.89
         ));
+
+        dinnerMenu.add(new MenuItem(
+                "Pasta",
+                "Spaghetti with Bolognese Sauce, red hot chili pepper, garlic and oregano",
+                false,
+                3.89
+        ));
+
+        dinnerMenu.add(new MenuItem(
+                "HotDog",
+                "A hot dog, with saurkraut, relish, onions, topped with cheese",
+                false,
+                2.05)
+        );
     }
 
     private static void fillInDessertMenu(MenuComponent dessertMenu) {
         dessertMenu.add(new MenuItem(
                 "Apple Pie",
-                "Apple Pie with a flakey crust, topped with vanilla icecream",
+                "Apple Pie with a flakey crust, topped with vanilla ice cream",
                 true,
                 1.59
+        ));
+
+        dessertMenu.add(new MenuItem(
+                "Blueberry Pie",
+                "Blueberry Pie with a whipped cream and mint leaves",
+                true,
+                2.59
         ));
     }
 
@@ -64,5 +91,17 @@ public class MenuTestDrive {
                 "Soup of the day, with a side of salad",
                 true,
                 3.69));
+
+        cafeMenu.add(new MenuItem(
+                "BLT",
+                "Bacon with lettuce & tomato on whole wheat",
+                false,
+                2.39));
+
+        cafeMenu.add(new MenuItem(
+                "Pizza",
+                "Huge Mozzarella pizza with tomatoes, olives and capers",
+                true,
+                4.39));
     }
 }

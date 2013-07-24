@@ -1,4 +1,5 @@
 package org.xander.Iterator;
+
 import java.util.Iterator;
 
 public class DinnerMenuIterator implements Iterator {

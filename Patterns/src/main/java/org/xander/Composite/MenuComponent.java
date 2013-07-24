@@ -1,5 +1,7 @@
 package org.xander.Composite;
 
+import java.util.Iterator;
+
 public abstract class MenuComponent {
     void add(MenuComponent menuComponent) {
         throw new UnsupportedOperationException();
@@ -32,4 +34,6 @@ public abstract class MenuComponent {
     void print() {
         throw new UnsupportedOperationException();
     }
+
+    abstract Iterator createIterator();
 }

@@ -5,7 +5,7 @@ public abstract class CaffeineBeverage {
         boilWater();
         brew();
         pourInCup();
-        if(customerWantsCondiments()) {
+        if (customerWantsCondiments()) {
             addCondiments();
         }
     }

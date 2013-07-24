@@ -1,5 +1,7 @@
 package org.xander.Composite;
 
+import java.util.Iterator;
+
 public class MenuItem extends MenuComponent {
     String name;
     String description;
@@ -30,6 +32,10 @@ public class MenuItem extends MenuComponent {
 
     public double getPrice() {
         return price;
+    }
+
+    public Iterator createIterator() {
+        return new NullIterator();
     }
 
     @Override
