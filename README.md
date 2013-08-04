@@ -16,7 +16,7 @@ The <b>Singleton</b> Pattern ensures a class has only one instance, and provides
 
 The <b>Command</b> Pattern encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queue or log requests, and support undoable operations.
 
-The <b>Adapter</b> Pattern converts the interface of a class into another interface the clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/Patterns/src/main/java/org/xander/Adapter">Adapter</a> Pattern converts the interface of a class into another interface the clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
 
 The <b>Template</b> Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
 
