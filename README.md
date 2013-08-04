@@ -25,3 +25,5 @@ The <b>Iterator</b> Pattern provides a way to access the elements of an aggregat
 The <b>Composite</b> Pattern allows you to compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
 
 The <b>State</b> Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
+The <b>Proxy</b> Pattern provides a surrogate or placeholder for another object to control access to it.
