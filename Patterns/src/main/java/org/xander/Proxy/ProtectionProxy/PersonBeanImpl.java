@@ -40,6 +40,6 @@ public class PersonBeanImpl implements PersonBean {
 
     public void setHotOrNotRating(int rating) {
         this.rating += rating;
-        rating++;
+        ratingCount++;
     }
 }

@@ -9,5 +9,4 @@ public interface PersonBean {
     void setGender(String gender);
     void setInterests(String interests);
     void setHotOrNotRating(int rating);
-
 }

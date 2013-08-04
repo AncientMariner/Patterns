@@ -17,29 +17,34 @@ public class MatchMakingTestDrive {
 
     private void drive() {
         PersonBeanImpl joe = getPersonFromDatabase("Joe Javabean");
+        PersonBeanImpl kelly = getPersonFromDatabase("Kelly Klosure");
+
         PersonBean ownerProxy = getOwnerProxy(joe);
         System.out.println("Name is " + ownerProxy.getName());
         ownerProxy.setInterests("bowling, Go");
         System.out.println("Interests set from owner proxy");
+
         try {
             ownerProxy.setHotOrNotRating(10);
         } catch (Exception e) {
             System.out.println("Can't set rating from owner proxy");
             e.printStackTrace();
         }
-        System.out.println("Rating is " + ownerProxy.getHotOrNotRating());
+        System.out.println(joe.getName() + " rating is " + ownerProxy.getHotOrNotRating());
 
-        PersonBean nonOwnerProxy = getNonOwnerProxy(joe);
-        System.out.println("Name is " + nonOwnerProxy.getName());
+        PersonBean nonOwnerProxy = getNonOwnerProxy(kelly);
+
+        System.out.println("\nName is " + nonOwnerProxy.getName());
+
         try {
             nonOwnerProxy.setInterests("cars, Go");
         } catch (Exception e) {
-            System.out.println("Can't set rating from owner proxy");
+            System.out.println("Can't set rating from non owner proxy");
             e.printStackTrace();
         }
-        nonOwnerProxy.setHotOrNotRating(3);
+        System.out.println(kelly.getName() + "Rating is " + nonOwnerProxy.getHotOrNotRating());
         System.out.println("Rating set from non owner proxy");
-        System.out.println("Rating is " + nonOwnerProxy.getHotOrNotRating());
+        nonOwnerProxy.setHotOrNotRating(3);
     }
 
     PersonBean getNonOwnerProxy(PersonBeanImpl personBeanImpl) {
