@@ -1,16 +1,20 @@
-package org.xander.Compound;
+package org.xander.Compound.Birds;
 
-public class DuckCall implements Quackable {
+import org.xander.Compound.Observer.Observable;
+import org.xander.Compound.Observer.Observer;
+
+public class GooseAdapter implements Quackable {
+    Goose goose;
     Observable observable;
 
-    public DuckCall() {
+    public GooseAdapter(Goose goose) {
+        this.goose = goose;
         observable = new Observable(this);
     }
 
     @Override
     public void quack() {
-        System.out.println("Kwak");
-        notifyObservers();
+        goose.honk();
     }
 
     @Override

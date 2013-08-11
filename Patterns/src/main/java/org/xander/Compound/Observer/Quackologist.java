@@ -1,4 +1,4 @@
-package org.xander.Compound;
+package org.xander.Compound.Observer;
 
 public class Quackologist implements Observer {
     @Override

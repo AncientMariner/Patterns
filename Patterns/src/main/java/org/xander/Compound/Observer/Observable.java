@@ -1,4 +1,4 @@
-package org.xander.Compound;
+package org.xander.Compound.Observer;
 
 import java.util.ArrayList;
 import java.util.Iterator;

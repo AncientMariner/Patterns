@@ -1,28 +1,32 @@
-package org.xander.Compound;
+package org.xander.Compound.Factory;
+
+import org.xander.Compound.Birds.Goose;
+import org.xander.Compound.Birds.GooseAdapter;
+import org.xander.Compound.Birds.Quackable;
 
 public class GeeseFactory extends AbstractDuckFactory {
 
-    Quackable createGoose() {
+    public Quackable createGoose() {
         return new GooseAdapter(new Goose());
     }
 
     @Override
-    Quackable createMallardDuck() {
+    public Quackable createMallardDuck() {
         return createGoose();
     }
 
     @Override
-    Quackable createRedheadDuck() {
+    public Quackable createRedheadDuck() {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    Quackable createDuckCall() {
+    public Quackable createDuckCall() {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    Quackable createRubberDuck() {
+    public Quackable createRubberDuck() {
         throw new UnsupportedOperationException();
     }
 }

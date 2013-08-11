@@ -1,4 +1,7 @@
-package org.xander.Compound;
+package org.xander.Compound.Birds;
+
+import org.xander.Compound.Observer.Observable;
+import org.xander.Compound.Observer.Observer;
 
 import java.util.ArrayList;
 import java.util.Iterator;

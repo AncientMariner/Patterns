@@ -1,4 +1,4 @@
-package org.xander.Compound;
+package org.xander.Compound.Birds;
 
 public class Goose {
     public void honk() {

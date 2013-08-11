@@ -1,5 +1,13 @@
 package org.xander.Compound;
 
+import org.xander.Compound.Birds.Flock;
+import org.xander.Compound.Birds.Quackable;
+import org.xander.Compound.Decorator.QuackCounter;
+import org.xander.Compound.Factory.AbstractDuckFactory;
+import org.xander.Compound.Factory.CountingDuckFactory;
+import org.xander.Compound.Factory.GeeseFactory;
+import org.xander.Compound.Observer.Quackologist;
+
 public class DuckSimulator {
     public static void main(String[] args) {
         DuckSimulator duckSimulator = new DuckSimulator();

@@ -1,6 +1,9 @@
-package org.xander.Compound;
+package org.xander.Compound.Decorator;
 
-public class QuackCounter implements Quackable{
+import org.xander.Compound.Birds.Quackable;
+import org.xander.Compound.Observer.Observer;
+
+public class QuackCounter implements Quackable {
     Quackable duck;
     static int numberOfQuacks;
 
