@@ -3,17 +3,21 @@ package org.xander.Compound;
 public class DuckSimulator {
     public static void main(String[] args) {
         DuckSimulator duckSimulator = new DuckSimulator();
-        duckSimulator.simulate();
+        AbstractDuckFactory duckFactory = new CountingDuckFactory();
+        AbstractDuckFactory geeseFactory = new GeeseFactory();
+
+        duckSimulator.simulate(duckFactory, geeseFactory);
     }
 
-    void simulate() {
-        Quackable mallardDuck = new QuackCounter(new MallardDuck());
-        Quackable redheadDuck = new QuackCounter(new RedheadDuck());
-        Quackable duckCall = new QuackCounter(new DuckCall());
-        Quackable rubberDuck = new QuackCounter(new RubberDuck());
-        Quackable gooseDuck = new GooseAdapter(new Goose());
+    void simulate(AbstractDuckFactory duckFactory, AbstractDuckFactory geeseFactory) {
+        Quackable mallardDuck = duckFactory.createMallardDuck();
+        Quackable redheadDuck = duckFactory.createRedheadDuck();
+        Quackable duckCall = duckFactory.createDuckCall();
+        Quackable rubberDuck = duckFactory.createRubberDuck();
+        Quackable gooseDuck = geeseFactory.createMallardDuck();  // pretend this is a goose
 
-        System.out.println("\nDuck Simulator");
+
+        System.out.println("\nDuck Simulator\n");
 
         simulate(mallardDuck);
         simulate(redheadDuck);
