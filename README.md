@@ -28,4 +28,4 @@ The <a href="https://github.com/AncientMariner/Patterns/tree/master/Patterns/src
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/Patterns/src/main/java/org/xander/Proxy">Proxy</a> Pattern provides a surrogate or placeholder for another object to control access to it.
 
-The <a href="https://github.com/AncientMariner/Patterns/tree/master/Patterns/src/main/java/org/xander/Compound">Compound</a> pattern combines patterns with each other
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/Patterns/src/main/java/org/xander/Compound">Compound</a> pattern combines patterns with each other.
