@@ -4,6 +4,11 @@ Design Patterns
 <h3>Design Patterns code examples</h3>
 ---------------------------------------------------------------------
 
+A Pattern is a solution to a problem in a context.
+---
+An Anti-Pattern tells you how to go from a problem to a BAD solution.
+
+
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/Patterns/src/main/java/org/xander/Strategy">Strategy</a> Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/Patterns/src/main/java/org/xander/Observer">Observer</a> Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
