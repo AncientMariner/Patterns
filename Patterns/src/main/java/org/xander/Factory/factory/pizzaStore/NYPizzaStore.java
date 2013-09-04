@@ -1,4 +1,6 @@
-package org.xander.Factory.factory;
+package org.xander.Factory.factory.pizzaStore;
+
+import org.xander.Factory.factory.pizza.*;
 
 public class NYPizzaStore extends PizzaStore {
     @Override

@@ -1,25 +1,30 @@
-package org.xander.Factory.abstractFactory;
+package org.xander.Factory.abstractFactory.pizza;
 
 import org.xander.Factory.abstractFactory.factories.PizzaIngredientFactory;
 
-public class VeggiePizza extends Pizza {
+public class PepperoniPizza extends Pizza {
     PizzaIngredientFactory pizzaIngredientFactory;
 
-    public VeggiePizza(PizzaIngredientFactory pizzaIngredientFactory) {
+    public PepperoniPizza(PizzaIngredientFactory pizzaIngredientFactory) {
         this.pizzaIngredientFactory = pizzaIngredientFactory;
     }
 
     @Override
-    void prepare() {
+    public void prepare() {
         System.out.println("Preparing " + name);
         dough = pizzaIngredientFactory.createDough();
         sauce = pizzaIngredientFactory.createSauce();
         cheese = pizzaIngredientFactory.createCheese();
-        veggies = pizzaIngredientFactory.createVeggies();
+        pepperoni = pizzaIngredientFactory.createPepperoni();
+    }
+
+    @Override
+    public void cut() {
+        System.out.println("Cutting pizza into thin triangle slices");
     }
 
     @Override
     public String toString() {
-        return "Veggie Pizza";
+        return "Pepperoni Pizza";
     }
 }

@@ -1,4 +1,4 @@
-package org.xander.Factory.factory;
+package org.xander.Factory.factory.pizza;
 
 public class NYStylePepperoniPizza extends Pizza {
     public NYStylePepperoniPizza() {

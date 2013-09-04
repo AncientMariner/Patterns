@@ -1,4 +1,4 @@
-package org.xander.Factory.factory;
+package org.xander.Factory.factory.pizza;
 
 public class ChicagoStylePepperoniPizza extends Pizza {
     public ChicagoStylePepperoniPizza() {
@@ -10,12 +10,12 @@ public class ChicagoStylePepperoniPizza extends Pizza {
     }
 
     @Override
-    void box() {
+    public void box() {
         System.out.println("Place pizza in official Chicago PizzaStore box");
     }
 
     @Override
-    void cut() {
+    public void cut() {
         System.out.println("Cutting pizza into 4 pieces");
     }
 }

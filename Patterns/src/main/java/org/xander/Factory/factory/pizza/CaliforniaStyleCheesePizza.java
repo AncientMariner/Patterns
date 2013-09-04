@@ -1,4 +1,4 @@
-package org.xander.Factory.factory;
+package org.xander.Factory.factory.pizza;
 
 public class CaliforniaStyleCheesePizza extends Pizza {
     public CaliforniaStyleCheesePizza() {

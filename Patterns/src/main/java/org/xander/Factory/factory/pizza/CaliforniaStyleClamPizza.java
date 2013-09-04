@@ -1,4 +1,4 @@
-package org.xander.Factory.factory;
+package org.xander.Factory.factory.pizza;
 
 public class CaliforniaStyleClamPizza extends Pizza {
     public CaliforniaStyleClamPizza() {
@@ -11,7 +11,7 @@ public class CaliforniaStyleClamPizza extends Pizza {
     }
 
     @Override
-    void cut() {
+    public void cut() {
         System.out.println("Cutting pizza into triangle slices");
     }
 }

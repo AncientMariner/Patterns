@@ -1,4 +1,4 @@
-package org.xander.Factory.abstractFactory;
+package org.xander.Factory.abstractFactory.pizza;
 
 import org.xander.Factory.abstractFactory.ingredients.clams.Clams;
 import org.xander.Factory.abstractFactory.ingredients.cheese.Cheese;
@@ -16,17 +16,17 @@ public abstract class Pizza {
     Pepperoni pepperoni;
     Clams clams;
 
-    abstract void prepare();
+    public abstract void prepare();
 
-    void bake() {
+    public void bake() {
         System.out.println("Bake for 25 minutes at 350");
     }
 
-    void cut() {
+    public void cut() {
         System.out.println("Cutting pizza into diagonal slices");
     }
 
-    void box() {
+    public void box() {
         System.out.println("Place pizza in official PizzaStore box");
     }
 

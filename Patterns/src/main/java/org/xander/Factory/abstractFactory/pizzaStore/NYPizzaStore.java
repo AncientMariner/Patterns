@@ -1,7 +1,8 @@
-package org.xander.Factory.abstractFactory;
+package org.xander.Factory.abstractFactory.pizzaStore;
 
 import org.xander.Factory.abstractFactory.factories.NYPizzaIngredientFactory;
 import org.xander.Factory.abstractFactory.factories.PizzaIngredientFactory;
+import org.xander.Factory.abstractFactory.pizza.*;
 
 public class NYPizzaStore extends PizzaStore {
 

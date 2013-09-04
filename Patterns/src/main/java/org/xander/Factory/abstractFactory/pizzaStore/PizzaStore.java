@@ -1,4 +1,6 @@
-package org.xander.Factory.abstractFactory;
+package org.xander.Factory.abstractFactory.pizzaStore;
+
+import org.xander.Factory.abstractFactory.pizza.Pizza;
 
 public abstract class PizzaStore {
     public Pizza orderPizza(String type) {

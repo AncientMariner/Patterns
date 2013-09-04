@@ -1,4 +1,4 @@
-package org.xander.Factory.abstractFactory;
+package org.xander.Factory.abstractFactory.pizza;
 
 import org.xander.Factory.abstractFactory.factories.PizzaIngredientFactory;
 
@@ -10,7 +10,7 @@ public class ClamPizza extends Pizza {
     }
 
     @Override
-    void prepare() {
+    public void prepare() {
         System.out.println("Preparing " + name);
         dough = pizzaIngredientFactory.createDough();
         sauce = pizzaIngredientFactory.createSauce();
@@ -19,7 +19,7 @@ public class ClamPizza extends Pizza {
     }
 
     @Override
-    void cut() {
+    public void cut() {
         System.out.println("Cutting pizza into rectangular pieces");
     }
 

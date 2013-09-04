@@ -1,4 +1,4 @@
-package org.xander.Factory.factory;
+package org.xander.Factory.factory.pizza;
 
 public class NYStyleCheesePizza extends Pizza {
     public NYStyleCheesePizza() {
@@ -10,7 +10,7 @@ public class NYStyleCheesePizza extends Pizza {
     }
 
     @Override
-    void bake() {
+    public void bake() {
         System.out.println("Bake for 30 minutes at 300");
     }
 }

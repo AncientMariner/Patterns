@@ -1,7 +1,8 @@
-package org.xander.Factory.abstractFactory;
+package org.xander.Factory.abstractFactory.pizzaStore;
 
-import org.xander.Factory.abstractFactory.factories.NYPizzaIngredientFactory;
+import org.xander.Factory.abstractFactory.factories.ChicagoPizzaIngredientFactory;
 import org.xander.Factory.abstractFactory.factories.PizzaIngredientFactory;
+import org.xander.Factory.abstractFactory.pizza.*;
 
 public class ChicagoPizzaStore extends PizzaStore {
 
@@ -10,7 +11,7 @@ public class ChicagoPizzaStore extends PizzaStore {
     @Override
     protected Pizza createPizza(String type) {
         Pizza pizza = null;
-        PizzaIngredientFactory pizzaIngredientFactory = new NYPizzaIngredientFactory();
+        PizzaIngredientFactory pizzaIngredientFactory = new ChicagoPizzaIngredientFactory();
 
         if (type.equals("cheese")) {
             pizza = new CheesePizza(pizzaIngredientFactory);
