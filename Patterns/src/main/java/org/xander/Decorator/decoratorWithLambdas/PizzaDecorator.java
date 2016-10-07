@@ -8,10 +8,11 @@ public class PizzaDecorator {
     private final Function<Pizza, Pizza> toppings;
 
     private PizzaDecorator(Function<Pizza, Pizza>... desiredToppings) {
-        this.toppings = Stream.of(desiredToppings).reduce(Function.identity(), Function::andThen);
+//        this.toppings = Stream.of(desiredToppings).reduce(Function.identity(), Function::andThen);
+        this.toppings = Stream.of(desiredToppings).reduce((cur) -> cur, (cur, next) -> cur.andThen(next));
     }
 
-
+    @SafeVarargs
     public static String bakePizza(Pizza pizza, Function<Pizza, Pizza>... desiredToppings) {
         return new PizzaDecorator(desiredToppings).bakePizza(pizza);
     }
