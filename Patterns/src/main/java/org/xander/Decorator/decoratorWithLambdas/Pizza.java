@@ -12,7 +12,12 @@ public interface Pizza {
             @Override
             public String bakePizza() {
                 return pizza.bakePizza() + " with prosciutto";
+
             }
         };
+    }
+
+    static Pizza withSpecial(Pizza pizza, String topping) {
+        return () -> pizza.bakePizza() + topping;
     }
 }
