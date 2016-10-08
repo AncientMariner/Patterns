@@ -1,11 +1,13 @@
 package org.xander.Adapter;
 
+import static org.xander.Adapter.TurkeyAdapter.TURKEY_ADAPTER;
+
 public class DuckAndTurkeyTestDrive {
     public static void main(String[] args) {
         MallardDuck mallardDuck = new MallardDuck();
         WildTurkey wildTurkey = new WildTurkey();
-        Duck turkeyAdapter = new TurkeyAdapter(wildTurkey);
-        Turkey duckAdapter = new DuckAdapter(mallardDuck);
+        Duck turkeyAdapter = TURKEY_ADAPTER.getInstanceWithTurkey(wildTurkey);
+        Turkey duckAdapter = DuckAdapter.getInstanceWithDuck(mallardDuck);
 
         System.out.println("The Turkey says...");
         wildTurkey.gobble();

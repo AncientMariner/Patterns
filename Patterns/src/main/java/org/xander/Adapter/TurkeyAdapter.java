@@ -1,10 +1,16 @@
 package org.xander.Adapter;
 
-public class TurkeyAdapter implements Duck {
-    Turkey turkey;
+public enum TurkeyAdapter implements Duck {
+    TURKEY_ADAPTER;
+    private Turkey turkey;
 
-    public TurkeyAdapter(Turkey turkey) {
-        this.turkey = turkey;
+    public TurkeyAdapter getInstanceWithTurkey(Turkey turkey) {
+        if(turkey == null) {
+            throw new IllegalStateException("object given to adapter is null");
+        }
+        TURKEY_ADAPTER.turkey = turkey;
+
+        return TURKEY_ADAPTER;
     }
 
     @Override

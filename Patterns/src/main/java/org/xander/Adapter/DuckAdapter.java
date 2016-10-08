@@ -1,10 +1,27 @@
 package org.xander.Adapter;
 
 public class DuckAdapter implements Turkey {
-    Duck duck;
+    private static DuckAdapter duckAdapter;
+    private Duck duck;
 
-    public DuckAdapter(Duck duck) {
-        this.duck = duck;
+    private DuckAdapter() {
+    }
+
+    private static DuckAdapter getInstance() {
+        if (duckAdapter == null) {
+            duckAdapter = new DuckAdapter();
+        }
+        return duckAdapter;
+    }
+
+    public static DuckAdapter getInstanceWithDuck(Duck duck) {
+        if(duck == null) {
+            throw new IllegalStateException("object given to adapter is null");
+        }
+        duckAdapter = getInstance();
+        duckAdapter.duck = duck;
+
+        return duckAdapter;
     }
 
     @Override
