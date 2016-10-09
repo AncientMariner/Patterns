@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
 
-public class ImageProxy implements Icon{
+public class ImageProxy implements Icon {
     ImageIcon imageIcon;
     URL imageURL;
     Thread retrievalThread;
@@ -37,7 +37,7 @@ public class ImageProxy implements Icon{
         if (imageIcon != null) {
             imageIcon.paintIcon(c, g, x, y);
         } else {
-            g.drawString("Loading a cover, please wait...", x+300, y+190);
+            g.drawString("Loading a cover, please wait...", x + 300, y + 190);
             if (!retriving) {
                 retriving = true;
                 retrievalThread = new Thread(new Runnable() {

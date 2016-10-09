@@ -8,7 +8,8 @@ public enum PayrollDay {
         double basePay = hoursWorked * payRate;
         double overtimePay;
         switch (this) {
-            case SATURDAY: case SUNDAY:
+            case SATURDAY:
+            case SUNDAY:
                 overtimePay = hoursWorked * payRate / 2;
             default: // Weekdays
                 overtimePay = hoursWorked <= HOURS_PER_SHIFT ?

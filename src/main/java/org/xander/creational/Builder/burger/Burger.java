@@ -9,34 +9,40 @@ import static org.xander.creational.Builder.burger.Tomato.tomato;
 class Burger {
     public final Patty patty;
     public final Topping topping;
- 
+
     private Burger(Patty patty, Topping topping) {
         this.patty = patty;
         this.topping = topping;
     }
- 
+
     public static BurgerBuilder burger() {
         return patty -> topping -> new Burger(patty, topping);
     }
- 
+
     interface BurgerBuilder {
         ToppingBuilder with(Patty patty);
+
         default VegetarianBuilder vegetarian() {
             return patty -> topping -> new Burger(patty, topping);
         }
     }
+
     interface VegetarianBuilder {
         VegetarianToppingBuilder with(VegetarianPatty main);
     }
+
     interface VegetarianToppingBuilder {
         Burger and(VegetarianTopping topping);
     }
+
     interface ToppingBuilder {
         Burger and(Topping topping);
+
         default FreeToppingBuilder andFree() {
             return topping -> and(topping);
         }
     }
+
     interface FreeToppingBuilder {
         Burger topping(FreeTopping topping);
     }

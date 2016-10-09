@@ -15,7 +15,7 @@ public class PizzaEating {
 
 //        String finishedPizza = PizzaDecorator.bakePizza(new BasicPizza(),Pizza::withChickenTikka, Pizza::withProsciutto);
         //And if you static import PizzaDecorator.bakePizza:
-        String finishedPizza  = bakePizza(new BasicPizza(), Pizza::withChickenTikka, Pizza::withProsciutto);
+        String finishedPizza = bakePizza(new BasicPizza(), Pizza::withChickenTikka, Pizza::withProsciutto);
         System.out.println(finishedPizza);
 
 

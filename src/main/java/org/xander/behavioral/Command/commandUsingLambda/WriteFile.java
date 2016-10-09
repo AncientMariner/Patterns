@@ -7,9 +7,9 @@ public class WriteFile implements Action {
     public WriteFile(FileSystemReceiver receiver) {
         this.receiver = receiver;
     }
- 
+
     public void perform() {
         receiver.writeFile();
     }
- 
+
 }

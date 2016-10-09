@@ -6,7 +6,7 @@ import java.util.Hashtable;
 public class MatchMakingTestDrive {
     Hashtable datingDB = new Hashtable();
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         MatchMakingTestDrive test = new MatchMakingTestDrive();
         test.drive();
     }
@@ -66,7 +66,7 @@ public class MatchMakingTestDrive {
 
 
     PersonBeanImpl getPersonFromDatabase(String name) {
-        return (PersonBeanImpl)datingDB.get(name);
+        return (PersonBeanImpl) datingDB.get(name);
     }
 
     void initializeDatabase() {

@@ -32,7 +32,7 @@ public class PersonBeanImpl implements PersonBean {
     }
 
     public int getHotOrNotRating() {
-        if(ratingCount == 0) {
+        if (ratingCount == 0) {
             return 0;
         }
         return (rating / ratingCount);

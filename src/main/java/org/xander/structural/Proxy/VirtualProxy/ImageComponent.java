@@ -3,7 +3,7 @@ package org.xander.structural.Proxy.VirtualProxy;
 import javax.swing.*;
 import java.awt.*;
 
-public class ImageComponent extends JComponent{
+public class ImageComponent extends JComponent {
     private Icon icon;
 
     public ImageComponent(Icon icon) {

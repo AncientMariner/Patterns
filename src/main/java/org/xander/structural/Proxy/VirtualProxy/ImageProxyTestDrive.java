@@ -20,7 +20,7 @@ public class ImageProxyTestDrive {
     }
 
     public ImageProxyTestDrive() throws Exception {
-        cds.put("Amazon logo","http://g-ecx.images-amazon.com/images/G/01/gno/images/general/navAmazonLogoFooter._V169459313_.gif");
+        cds.put("Amazon logo", "http://g-ecx.images-amazon.com/images/G/01/gno/images/general/navAmazonLogoFooter._V169459313_.gif");
 //        cds.put("Buddha Bar","http://images.amazon.com/images/P/B00009XBYK.01.LZZZZZZZ.jpg");
 
 //        cds.put("Ima","http://images.amazon.com/images/P/B000005IRM.01.LZZZZZZZ.jpg");
@@ -35,8 +35,8 @@ public class ImageProxyTestDrive {
         menuBar.add(menu);
         frame.setJMenuBar(menuBar);
 
-        for(Enumeration e = cds.keys(); e.hasMoreElements();) {
-            String name = (String)e.nextElement();
+        for (Enumeration e = cds.keys(); e.hasMoreElements(); ) {
+            String name = (String) e.nextElement();
             JMenuItem menuItem = new JMenuItem(name);
             menu.add(menuItem);
             menuItem.addActionListener(new ActionListener() {
@@ -48,19 +48,18 @@ public class ImageProxyTestDrive {
         }
 
 
-
         Icon icon = new ImageProxy(initialURL);
         imageComponent = new ImageComponent(icon);
         frame.getContentPane().add(imageComponent);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(800,600);
+        frame.setSize(800, 600);
         frame.setVisible(true);
 
     }
 
     URL getCDUrl(String name) {
         try {
-            return new URL((String)cds.get(name));
+            return new URL((String) cds.get(name));
         } catch (MalformedURLException e) {
             e.printStackTrace();
             return null;

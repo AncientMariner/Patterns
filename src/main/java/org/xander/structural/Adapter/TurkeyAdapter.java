@@ -5,7 +5,7 @@ public enum TurkeyAdapter implements Duck {
     private Turkey turkey;
 
     public TurkeyAdapter getInstanceWithTurkey(Turkey turkey) {
-        if(turkey == null) {
+        if (turkey == null) {
             throw new IllegalStateException("object given to adapter is null");
         }
         TURKEY_ADAPTER.turkey = turkey;

@@ -7,9 +7,9 @@ public class CloseFile implements Action {
     public CloseFile(FileSystemReceiver receiver) {
         this.receiver = receiver;
     }
- 
+
     public void perform() {
         receiver.closeFile();
     }
- 
+
 }

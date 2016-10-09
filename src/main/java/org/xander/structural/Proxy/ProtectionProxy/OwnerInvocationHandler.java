@@ -14,9 +14,9 @@ public class OwnerInvocationHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         try {
-                 if(method.getName().startsWith("get"))            return method.invoke(personBeanImpl, args);
+            if (method.getName().startsWith("get")) return method.invoke(personBeanImpl, args);
             else if (method.getName().equals("setHotOrNotDating")) throw new IllegalAccessException();
-            else if (method.getName().startsWith("set"))           return method.invoke(personBeanImpl, args);
+            else if (method.getName().startsWith("set")) return method.invoke(personBeanImpl, args);
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }

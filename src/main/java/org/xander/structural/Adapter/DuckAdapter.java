@@ -15,7 +15,7 @@ public class DuckAdapter implements Turkey {
     }
 
     public static DuckAdapter getInstanceWithDuck(Duck duck) {
-        if(duck == null) {
+        if (duck == null) {
             throw new IllegalStateException("object given to adapter is null");
         }
         duckAdapter = getInstance();
