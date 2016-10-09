@@ -23,11 +23,11 @@ The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/jav
 
 Creational:
 
-The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/Builder">Builder</a> The intent of the Builder design pattern is to separate the construction of a complex object from its representation
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/Builder">Builder</a> The intent of the Builder design pattern is to separate the construction of a complex object from its representation
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/Compound">Compound</a> pattern combines patterns with each other.
-The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/Factory">Factory</a> Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
-The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/Prototype">Prototype</a> Prototype design pattern is used when the Object creation is a costly affair and requires a lot of time and resources and you have a similar object already existing
-The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/Singleton">Singleton</a> Pattern ensures a class has only one instance, and provides a global point of access to it.
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/Factory">Factory</a> Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/Prototype">Prototype</a> Prototype design pattern is used when the Object creation is a costly affair and requires a lot of time and resources and you have a similar object already existing
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/Singleton">Singleton</a> Pattern ensures a class has only one instance, and provides a global point of access to it.
 
 Structural:
 
