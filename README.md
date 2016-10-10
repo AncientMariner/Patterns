@@ -20,6 +20,8 @@ The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/jav
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/Memento">Memento</a> Memento design pattern is used when we want to save the state of an object so that we can restore later on.
 
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/NullObject">NullObject</a> All the objects are access via references, these references need to be checked to ensure they are not null before invoking any methods, because methods typically cannot be invoked on null references.
+
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/Observer">Observer</a> Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/State">State</a> Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
