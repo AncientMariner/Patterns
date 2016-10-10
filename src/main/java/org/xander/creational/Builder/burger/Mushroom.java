@@ -1,7 +1,7 @@
 package org.xander.creational.Builder.burger;
 
 interface Mushroom extends VegetarianPatty {
-    public static Mushroom mushroom() {
+    static Mushroom mushroom() {
         return null;
     }
 }
