@@ -7,8 +7,8 @@ import static org.xander.creational.Builder.burger.Mushroom.mushroom;
 import static org.xander.creational.Builder.burger.Tomato.tomato;
 
 class Burger {
-    public final Patty patty;
-    public final Topping topping;
+    private final Patty patty;
+    private final Topping topping;
 
     private Burger(Patty patty, Topping topping) {
         this.patty = patty;
@@ -27,10 +27,12 @@ class Burger {
         }
     }
 
+    @FunctionalInterface
     interface VegetarianBuilder {
         VegetarianToppingBuilder with(VegetarianPatty main);
     }
 
+    @FunctionalInterface
     interface VegetarianToppingBuilder {
         Burger and(VegetarianTopping topping);
     }
@@ -43,6 +45,7 @@ class Burger {
         }
     }
 
+    @FunctionalInterface
     interface FreeToppingBuilder {
         Burger topping(FreeTopping topping);
     }
