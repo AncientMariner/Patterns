@@ -40,6 +40,8 @@ The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/jav
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/Factory">Factory</a> Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/ObjectPool">ObjectPool</a> Object pooling can offer a significant performance boost; it is most effective in situations where the cost of initializing a class instance is high, the rate of instantiation of a class is high, and the number of instantiations in use at any one time is low
+
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/Prototype">Prototype</a> Prototype design pattern is used when the Object creation is a costly affair and requires a lot of time and resources and you have a similar object already existing
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/Singleton">Singleton</a> Pattern ensures a class has only one instance, and provides a global point of access to it.
@@ -56,7 +58,7 @@ The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/jav
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/structural/Facade">Facade</a> Provide a unified interface to a set of interfaces in a subsystem. Facade Pattern defines a higher-level interface that makes the subsystem easier to use
 
-The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/structural/Flyweight">Flyweight</a>Use sharing to support large numbers of fine-grained objects efficiently
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/structural/Flyweight">Flyweight</a> Use sharing to support large numbers of fine-grained objects efficiently
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/structural/PrivateClass">PrivateClass</a> Private Class Data Pattern addresses the issue a class may have, concerning around protecting object state, where final cannot be declared
 
