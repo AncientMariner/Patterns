@@ -56,6 +56,8 @@ The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/jav
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/structural/Facade">Facade</a> Provide a unified interface to a set of interfaces in a subsystem. Facade Pattern defines a higher-level interface that makes the subsystem easier to use
 
-The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/structural/Flyweight"> Flyweight</a>Use sharing to support large numbers of fine-grained objects efficiently
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/structural/Flyweight">Flyweight</a>Use sharing to support large numbers of fine-grained objects efficiently
+
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/structural/PrivateClass">PrivateClass</a> Private Class Data Pattern addresses the issue a class may have, concerning around protecting object state, where final cannot be declared
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/structural/Proxy">Proxy</a> Pattern provides a surrogate or placeholder for another object to control access to it.
