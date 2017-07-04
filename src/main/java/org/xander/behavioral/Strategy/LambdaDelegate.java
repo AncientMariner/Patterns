@@ -1,7 +1,6 @@
 package org.xander.behavioral.Strategy;
 
 import java.math.BigDecimal;
-import java.util.Calendar;
 import java.util.function.Function;
 
 public class LambdaDelegate {
