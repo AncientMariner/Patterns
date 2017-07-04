@@ -10,6 +10,8 @@ public class PizzaDecorator {
     @SafeVarargs
     private PizzaDecorator(Function<Pizza, Pizza>... desiredToppings) {
 //        this.toppings = Stream.of(desiredToppings).reduce(Function.identity(), Function::andThen);
+//        this.toppings = Stream.of(desiredToppings).reduce((cur, next) -> cur.compose(next)).orElseGet(Function::identity);
+//        this.toppings = Stream.of(desiredToppings).reduce((cur, next) -> cur.andThen(next)).orElse(Function.identity());
         this.toppings = Stream.of(desiredToppings).reduce((cur) -> cur, (cur, next) -> cur.andThen(next));
     }
 
