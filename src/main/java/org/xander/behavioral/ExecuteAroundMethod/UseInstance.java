@@ -1,4 +1,4 @@
-package org.xander.behavioral.ExecuteAround;
+package org.xander.behavioral.ExecuteAroundMethod;
 
 @FunctionalInterface
 public interface UseInstance<T, X extends Throwable> {

@@ -1,4 +1,4 @@
-package org.xander.behavioral.ExecuteAround;
+package org.xander.behavioral.ExecuteAroundMethod;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -33,7 +33,10 @@ public class FileWriterExample {
 
     public static void main(String[] args) {
         try {
-            FileWriterExample.use("test.txt", writer -> writer.writeStuff("test"));
+            FileWriterExample.use("test.txt", writer -> {
+                writer.writeStuff("test1");
+//                writer.writeStuff("test2");
+            });
         } catch (IOException e) {
             e.printStackTrace();
         }
