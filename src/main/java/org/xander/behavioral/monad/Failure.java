@@ -2,24 +2,24 @@ package org.xander.behavioral.monad;
 
 import java.util.function.Function;
 
-public class Success<A> implements Try<A> {
-    private final A value;
+public class Failure<A> implements Try<A> {
+    private final Object error;
 
-    public Success(A value) {
-        this.value = value;
+    public Failure(Object error) {
+        this.error = error;
     }
 
     public boolean isFailure() {
-        return false;
+        return true;
     }
 
     @Override
     public <B> Try<B> map(Function<A, B> function) {
-        return new Success<>(function.apply(value));
+        return (Failure<B>)this;
     }
 
     @Override
     public <B> Try<B> flatMap(Function<A, Try<B>> function) {
-        return function.apply(value);
+        return (Failure<B>)this;
     }
 }
