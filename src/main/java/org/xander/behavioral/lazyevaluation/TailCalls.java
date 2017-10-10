@@ -17,9 +17,4 @@ public class TailCalls {
             return call(() -> factorialTailRec(factorial * number, number - 1));
         }
     }
-    
-    public static void main(String[] args) {
-        System.out.println(factorialTailRec(1, 5).invoke());        
-        System.out.println(factorialTailRec(1, 20000).invoke());
-    }
 }
