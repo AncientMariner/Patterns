@@ -1,5 +1,7 @@
 package org.xander.behavioral.lazyevaluation;
 
+import java.util.stream.Stream;
+
 @FunctionalInterface
 public interface TailCall<T> {
     TailCall<T> apply();
