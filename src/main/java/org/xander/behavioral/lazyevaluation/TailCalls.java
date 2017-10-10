@@ -9,4 +9,9 @@ public class TailCalls {
             @Override public TailCall<T> apply() { throw new Error("not implemented"); }
         };
     }
+    
+    public static void main(String[] args) {
+        System.out.println(factorialTailRec(1, 5).invoke());        
+        System.out.println(factorialTailRec(1, 20000).invoke());
+    }
 }
