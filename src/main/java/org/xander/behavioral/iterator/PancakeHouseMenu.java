@@ -1,13 +1,12 @@
 package org.xander.behavioral.iterator;
 
 import java.util.*;
-import java.util.Iterator;
 
 public class PancakeHouseMenu implements Menu {
-    ArrayList menuItems;
+    ArrayList<MenuItem> menuItems;
 
     public PancakeHouseMenu() {
-        menuItems = new ArrayList();
+        menuItems = new ArrayList<>();
 
         addItem("K&B's Pancake Breakfast",
                 "Pancakes with scrambled eggs, and toast",
@@ -35,7 +34,7 @@ public class PancakeHouseMenu implements Menu {
         menuItems.add(menuItem);
     }
 
-    public Iterator createIterator() {
+    public Iterator<MenuItem> createIterator() {
         return menuItems.iterator();
     }
 }
