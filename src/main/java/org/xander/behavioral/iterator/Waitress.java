@@ -4,24 +4,24 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Waitress {
-    ArrayList menus;
+    ArrayList<Menu> menus;
 
-    public Waitress(ArrayList menus) {
+    public Waitress(ArrayList<Menu> menus) {
         this.menus = menus;
     }
 
     public void printMenu() {
-        Iterator menuIterator = menus.iterator();
+        Iterator<Menu> menuIterator = menus.iterator();
         while (menuIterator.hasNext()) {
-            Menu menu = (Menu) menuIterator.next();
+            Menu menu = menuIterator.next();
             System.out.println();
             printMenu(menu.createIterator());
         }
     }
 
-    private void printMenu(Iterator iterator) {
+    private void printMenu(Iterator<MenuItem> iterator) {
         while (iterator.hasNext()) {
-            MenuItem menuItem = (MenuItem) iterator.next();
+            MenuItem menuItem = iterator.next();
             System.out.print(menuItem.getName() + ", ");
             System.out.print(menuItem.getPrice() + " -- ");
             System.out.println(menuItem.getDescription());
