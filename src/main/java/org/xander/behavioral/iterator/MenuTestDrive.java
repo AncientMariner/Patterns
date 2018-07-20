@@ -7,7 +7,7 @@ public class MenuTestDrive {
         PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
         DinnerMenu dinnerMenu = new DinnerMenu();
         CafeMenu cafeMenu = new CafeMenu();
-        ArrayList<Menu> menuArrayList = new ArrayList<Menu>();
+        ArrayList<Menu> menuArrayList = new ArrayList<>();
         menuArrayList.add(pancakeHouseMenu);
         menuArrayList.add(dinnerMenu);
         menuArrayList.add(cafeMenu);
