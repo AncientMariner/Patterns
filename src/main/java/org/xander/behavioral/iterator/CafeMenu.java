@@ -4,7 +4,7 @@ import java.util.Hashtable;
 import java.util.Iterator;
 
 public class CafeMenu implements Menu {
-    Hashtable menuItems = new Hashtable();
+    Hashtable<String, MenuItem> menuItems = new Hashtable<>();
 
     public CafeMenu() {
         addItem("Veggie Burger and Air Fries",
@@ -27,7 +27,7 @@ public class CafeMenu implements Menu {
     }
 
     @Override
-    public Iterator createIterator() {
+    public Iterator<MenuItem> createIterator() {
         return menuItems.values().iterator();
     }
 }
