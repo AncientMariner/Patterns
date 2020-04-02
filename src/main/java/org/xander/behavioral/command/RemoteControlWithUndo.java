@@ -40,14 +40,14 @@ public class RemoteControlWithUndo {
 
     @Override
     public String toString() {
-        StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append("\n----- Remote control -----\n");
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("\n----- Remote control -----\n");
 
         for (int i = 0; i < onCommands.length; i++) {
-            stringBuffer.append("[slot " + i + "] " + onCommands[i].getClass().getName()
+            stringBuilder.append("[slot " + i + "] " + onCommands[i].getClass().getName()
                     + "    " + offCommands[i].getClass().getName() + "\n");
         }
-
-        return stringBuffer.toString();
+        stringBuilder.append("[undo]   " + undoCommand);
+        return stringBuilder.toString();
     }
 }
