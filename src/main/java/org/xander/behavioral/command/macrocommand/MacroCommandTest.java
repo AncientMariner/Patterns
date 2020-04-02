@@ -27,6 +27,7 @@ public class MacroCommandTest {
         System.out.println(remoteControl);
         System.out.println("--- Pushing Macro On ---");
         remoteControl.onButtonWasPushed(0);
+        System.out.println(remoteControl);
         System.out.println();
         System.out.println("--- Pushing Macro Off ---");
         remoteControl.offButtonWasPushed(0);
