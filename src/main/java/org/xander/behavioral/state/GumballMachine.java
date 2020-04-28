@@ -2,7 +2,7 @@ package org.xander.behavioral.state;
 
 public class GumballMachine {
     State soldOutState;
-    State noQarterState;
+    State noQuarterState;
     State hasQuarterState;
     State soldState;
     State winnerState;
@@ -12,14 +12,14 @@ public class GumballMachine {
 
     public GumballMachine(int numberOfBalls) {
         soldOutState = new SoldOutState(this);
-        noQarterState = new NoQuarterState(this);
+        noQuarterState = new NoQuarterState(this);
         hasQuarterState = new HasQuarterState(this);
         soldState = new SoldState(this);
         winnerState = new WinnerState(this);
         this.count = numberOfBalls;
 
         if (numberOfBalls > 0) {
-            state = noQarterState;
+            state = noQuarterState;
         }
     }
 
@@ -50,7 +50,7 @@ public class GumballMachine {
     void refill(int numberOfBalls) {
         System.out.println("\n-----Refilling the machine with " + numberOfBalls + " balls");
         this.count = numberOfBalls;
-        state = noQarterState;
+        state = noQuarterState;
     }
 
     public State getSoldOutState() {
@@ -58,7 +58,7 @@ public class GumballMachine {
     }
 
     public State getNoQuarterState() {
-        return noQarterState;
+        return noQuarterState;
     }
 
     public State getHasQuarterState() {
