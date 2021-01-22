@@ -20,7 +20,7 @@ The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/jav
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/memento">Memento</a> Memento design pattern is used when we want to save the state of an object so that we can restore later on.
 
-The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/nullObject">NullObject</a> All the objects are access via references, these references need to be checked to ensure they are not null before invoking any methods, because methods typically cannot be invoked on null references.
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/nullobject">NullObject</a> All the objects are access via references, these references need to be checked to ensure they are not null before invoking any methods, because methods typically cannot be invoked on null references.
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/observer">Observer</a> Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
@@ -40,7 +40,7 @@ The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/jav
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/factory">Factory</a> Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
-The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/objectPool">ObjectPool</a> Object pooling can offer a significant performance boost; it is most effective in situations where the cost of initializing a class instance is high, the rate of instantiation of a class is high, and the number of instantiations in use at any one time is low
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/objectpool">ObjectPool</a> Object pooling can offer a significant performance boost; it is most effective in situations where the cost of initializing a class instance is high, the rate of instantiation of a class is high, and the number of instantiations in use at any one time is low
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/creational/prototype">Prototype</a> Prototype design pattern is used when the Object creation is a costly affair and requires a lot of time and resources and you have a similar object already existing
 
