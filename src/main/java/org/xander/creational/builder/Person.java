@@ -125,6 +125,14 @@ public class Person {
         return new Person().new Builder();
     }
 
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.setState("California");
+        person.setCity("San Diego");
+
+        Person personFromBuilder = Person.newBuilder().setState("California").setCity("San Diego").build();
+    }
+    
     public class Builder {
 
         private Builder() {
