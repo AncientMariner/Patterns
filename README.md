@@ -10,7 +10,11 @@ A Pattern is a solution to a problem in a context.
 
 Behavioral:
 
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/chainofresponsibility"> Chain of responsibility</a> In object-oriented design, the chain-of-responsibility pattern is a behavioral design pattern consisting of a source of command objects and a series of processing objects.
+
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/command">Command</a> Pattern encapsulates a request as an object, thereby letting you parametrize other objects with different requests, queue or log requests, and support undoable operations.
+
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/executearoundmethod">Execute around method</a> Execute around pattern executes a given block of code with a pre and post operations, this pattern is very useful when dealing with expensive resources and can be used to close the resources instead of relying on the callers to close the resource.
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/interpreter">Interpreter</a> Pattern is used to defines a grammatical representation for a language and provides an interpreter to deal with this grammar
 
@@ -19,6 +23,8 @@ The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/jav
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/mediator">Mediator</a> Allows loose coupling by encapsulating the way disparate sets of objects interact and communicate with each other. Allows for the actions of each object set to vary independently of one another.
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/memento">Memento</a> Memento design pattern is used when we want to save the state of an object so that we can restore later on.
+
+The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/monad">Monad</a> In functional programming, a monad is a structure that combines program fragments (functions) and wraps their return values in a type with additional computation.
 
 The <a href="https://github.com/AncientMariner/Patterns/tree/master/src/main/java/org/xander/behavioral/nullobject">NullObject</a> All the objects are access via references, these references need to be checked to ensure they are not null before invoking any methods, because methods typically cannot be invoked on null references.
 
