@@ -1,6 +1,6 @@
 package org.xander.behavioral.monad;
 
-import javafx.util.Pair;
+// import javafx.util.Pair;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -47,11 +47,11 @@ public class FunctionalAccount {
         FunctionalAccount b = new FunctionalAccount("Bob", "456", new Balance(BigDecimal.ZERO));
         FunctionalAccount c = new FunctionalAccount("Charlie", "789", new Balance(BigDecimal.valueOf(150)));
 
-        List<FunctionalAccount> unpaid = Stream.of(a, b, c)
-                .map(account -> new Pair<>(account, account.debit(new BigDecimal(100))))
-                .filter(t -> t.getValue().isFailure())
-                .map(t -> t.getKey())
-                .collect(Collectors.toList());
+//         List<FunctionalAccount> unpaid = Stream.of(a, b, c)
+//                 .map(account -> new Pair<>(account, account.debit(new BigDecimal(100))))
+//                 .filter(t -> t.getValue().isFailure())
+//                 .map(t -> t.getKey())
+//                 .collect(Collectors.toList());
 
         List<FunctionalAccount> accounts = Stream.of(a, b, c)
                 .filter(accout -> accout.debit(new BigDecimal(100)).isFailure())
